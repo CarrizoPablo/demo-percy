@@ -1,0 +1,11 @@
+demo percy
+
+http-server ¨Levantar servidor de consola" dejar corriendo
+
+en el comand
+dentro de la carpeta del demo
+
+1 set Percy_TOKEN
+2 npx percy snapshot .snapshots.yml
+
+https://percy.io/?utm_source=chatgpt.com

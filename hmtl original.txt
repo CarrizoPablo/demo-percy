@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tienda Online</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            text-align:center;
+            margin-top:100px;
+        }
+
+        button{
+            background-color:blue;
+            color:white;
+            border:none;
+            padding:15px 30px;
+            font-size:20px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tienda Online</h1>
+
+    <button>Comprar</button>
+
+</body>
+</html>
