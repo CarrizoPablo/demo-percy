@@ -9,3 +9,72 @@ dentro de la carpeta del demo
 2 npx percy snapshot .snapshots.yml
 
 https://percy.io/?utm_source=chatgpt.com
+
+
+
+configuro el archivo snapshohts.yml
+snapshots:
+  - url: https://carrizopablo.github.io/demo-percy/
+    name: Home Page
+pongo la clave que me da percy
+
+export PERCY_TOKEN=web_ce0f98e540db3690c22959afd432c0f11d4387bc02eeb19b71881e1dbb718854
+guardo una captura con..
+npx percy snapshot .snapshots.yml
+
+cambio la pagina. el color del boton y la guardo con..
+
+ git add .
+git commit -m "Boton color blanco"
+git push
+
+guardo una captura con una nueva captura ..
+npx percy snapshot .snapshots.yml
+
+Percy permite detectar errores visuales automáticamente comparando
+ capturas de pantalla entre distintas versiones de una aplicación. 
+En nuestro ejemplo, el sistema identificó cambios en la apariencia 
+del botón y en el fondo de la página, aunque el código seguía 
+funcionando correctamente. Esto demuestra cómo una aplicación puede
+ presentar problemas visuales que afectan la experiencia del 
+usuario sin generar errores funcionales.
+
+diff nos señala las diferencias visuales.detecto un cambio visual no analiza la logica, no analiza el backe end
+solo analiza el diseño, posiciones, colores, textos, tamaños, elementos visuales.
+
+hay una linea roja en medio que señala la zona donde se detectaron los cambios
+approve bluid es para indicar que los cambios son correctos y ahora pasan a ser la nueva version base.
+1 snapchot changed quiere decir que una pantalla cambio visualmente
+Percy detecta:
+
+colores,
+márgenes,
+alineación,
+tipografía,
+botones fuera de lugar,
+elementos invisibles,
+textos cortados,
+cambios responsive.
+¿Por qué es importante para empresas?
+
+Porque muchos errores:
+
+NO rompen el sistema,
+PERO sí dañan la experiencia del usuario.
+
+Ejemplos:
+
+botón invisible,
+menú roto,
+texto ilegible,
+checkout mal alineado.
+
+El testing de regresión visual busca detectar cambios inesperados en la 
+interfaz gráfica de una aplicación. Herramientas como Percy utilizan 
+inteligencia artificial y comparación automática de imágenes para encontrar 
+diferencias visuales entre versiones del sistema. Esto permite identificar 
+problemas que podrían pasar desapercibidos durante el desarrollo, 
+como botones invisibles, cambios de diseño o errores de alineación, 
+evitando impactos negativos en la experiencia del usuario y en la reputación
+ de la empresa.
+
